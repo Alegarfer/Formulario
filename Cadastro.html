@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pessoas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif ;
+            margin: 20px;
+            background-color: #2e4568;
+        }
+        .container{
+            width: 50%;                                        /* largura*/
+            background-color: rgb(133, 150, 197);           /*cor do container*/
+            padding: 20px;                                     /* afasta o texto do container mais para o centro*/
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50,-50);
+            
+        }
+    </style>
+</head>
+    <body>
+        <div class="container">                         <!-- va ficar como se fosse uma caixa -->
+            <h3> Cadastro de Pessoas</h3>               <!-- titulo dentro da caixa -->
+                <form action="" method="post">              <!-- Serve para enviar ou buscar no banco de dados -->
+                    <label for="Nome"> Nome Completo:</label>
+                        <input type="text" id="nome name = Nome"  placeholder="Digite aqui o seu Nome"> 
+                    <label for="e-mail"> e-mail: </label>
+                        <input type="e-mail" id="e-mail e-mail = e-mail" placeholder="Digite aqui o seu e-mail">
+        
+                    <label for="Telefone"> Telefone:</label>
+                        <input type="tel" name="Telefone" placeholder="Digite aqui o seu número">
+                    <label for="nacimento"> Data de Nascimento:</label>
+                        <input type="date" id="Nascimento" ><br>
+                    <label for="genero"> Gênero:</label>
+                    <select id="genero"> <option value="masculino"> Masculino</option>
+                        <option value="Feminimo"> Feminimo </option>
+                        <option value="outros"> Outros</option>
+                    </select>
+
+                     <label for="senha"> Senha</label>
+                        <input for type="password" id = "senha" name="senha" placeholder="Digite a Senha" required>
+                    <label for="confirmar-senha"> Confirmar Senha </label> 
+                        <input for type="password" id="confirmar-senha" name="confirmar-senha"  placeholder="Digite a Senha">
+                     <button type="submit">Cadastrar  </button>
+                </form> 
+        </div>
+
+</body>
+</html>
